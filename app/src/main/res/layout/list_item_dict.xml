@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_container_dicts_height"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/myrect"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:id="@+id/linearKeliatan"
+        android:paddingStart="130dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Mempertanggungjawabkan"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="ini adalah contoh deskripsi tolong abaiksan saja karena ini tidak begitu penting silahkan saja anda pergi dan abaikan tulisan ini karena memang tidak bermakna dant idak penting" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="@dimen/item_dicts_height"
+        android:layout_height="@dimen/item_dicts_height"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/placeholder" />
+
+</RelativeLayout>
